@@ -1,0 +1,12 @@
+.navbar li{
+  display: inline;
+}
+
+.navbar-nav{
+  margin: 0 auto;
+}
+
+.fa-instagram{
+  position: absolute;
+  margin: -17px;
+}
