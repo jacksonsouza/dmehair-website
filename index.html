@@ -19,37 +19,50 @@
 
 <body>
 
+  <!-- Header -->
+  <nav id="header" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" ref="#">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+    <span class="navbar-text d-none d-lg-block">
+      13416 Bothell Everett Hwy #201, Mill Creek, WA 98012
+    </span>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Book Now</button>
+  </nav>
+
+  <!-- Logo -->
+  <div id="logo" class="containter">
+    <div class="placeholder-short"></div>
+  </div>
+
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-    <div class="container">
-      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#about">About
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <nav class="navbar sticky-top navbar-light bg-light">
+    <!--navigation should mimic ninezeroone (insta, address, book now [to contact])-->
+      <ul class="navbar-nav">
+        <li class="nav-item active d-none d-lg-block">
+          <a class="nav-link" href="#about">About
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item" style="padding-right:0;">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
   </nav>
 
   <!-- Page Content -->
   <div id="about" class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">About</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+        <h1 class="mt-5">Meet Desiree</h1>
+        <div class="placeholder-tall"></div>
+        <p class="lead">Bio with instagram feed carousel at top</p>
       </div>
     </div>
   </div>
@@ -58,7 +71,8 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">Services</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+        <div class="placeholder-tall"></div>
+        <p class="lead">table (right) with educational gif on hover (left)</p>
       </div>
     </div>
   </div>
@@ -67,7 +81,21 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">Contact</h1>
-        <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+        <div class="placeholder-tall"></div>
+        <p class="lead">Simple contact pane (ninezeroone info)</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id="contact" class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">FAQ</h1>
+        <div class="placeholder-tall"></div>
+        <p class="lead">Barefoot blonde collapsable faq</p>
+        <p>Can you take me from dark to platinum in one session? - Rome wasn't built in a day, and neither is great hair</p>
+        <p>Do you do men's hairstyling? - Only for my husband, sometimes. I feel my skillset is better suited for women at this time.</p>
+        <p>Do you do children's hair? - Not at this time.</p>
       </div>
     </div>
   </div>
