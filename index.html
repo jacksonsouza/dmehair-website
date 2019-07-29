@@ -8,10 +8,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Bare - Start Bootstrap Template</title>
+  <title>&#128135; | desireemayehair</title>
   
   <link rel="stylesheet" type="text/css" href="index.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/1fdb1a485c.js"></script>
 
@@ -57,12 +60,72 @@
   </nav>
 
   <!-- Page Content -->
-  <div id="about" class="container">
+  <div id="about">
     <div class="row">
+      <!--instagram carousel-->
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Meet Desiree</h1>
-        <div class="placeholder-tall"></div>
-        <p class="lead">Bio with instagram feed carousel at top</p>
+        <div id="about-carousel" class="carousel slide w-100" data-ride="carousel" data-interval="false">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="http://placehold.it/300x600?text=1">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="http://placehold.it/300x600?text=2">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="http://placehold.it/300x600?text=3">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="http://placehold.it/300x600?text=4">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="http://placehold.it/300x600?text=5">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-3">
+                        <div class="card card-body">
+                        <img class="img-fluid" src="http://placehold.it/300x600?text=6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#about-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#about-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="col-lg-12 text-center">
+        <div class="container">
+          <h1 class="mt-5">Hi, I'm Desiree</h1>
+          <div class="placeholder-tall"></div>
+          <p class="lead">Bio (bfb meet amber)</p>
+        </div>
       </div>
     </div>
   </div>
@@ -96,13 +159,33 @@
         <p>Can you take me from dark to platinum in one session? - Rome wasn't built in a day, and neither is great hair</p>
         <p>Do you do men's hairstyling? - Only for my husband, sometimes. I feel my skillset is better suited for women at this time.</p>
         <p>Do you do children's hair? - Not at this time.</p>
+        <p>Why do you require a non-refundable deposit to book an appointment? - </p>
+        <p>What is your cancellation policy? - </p>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>
+
+<script>
+  $('.carousel .carousel-item').each(function(){
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i=0;i<minPerSlide;i++) {
+        next=next.next();
+        if (!next.length) {
+        	next = $(this).siblings(':first');
+      	}
+        
+        next.children(':first-child').clone().appendTo($(this));
+      }
+});
+
+</script>
 
 </html>
