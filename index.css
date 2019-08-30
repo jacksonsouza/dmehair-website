@@ -164,6 +164,14 @@
   color:black;
 }
 
+#faq .card-header{
+  background-color: rgb(222,226,220);
+}
+
+#faq .card{
+  border: 1px solid rgba(0,0,0,.3);
+}
+
 #footer {
   position: relative;
   margin-top: 40px;
